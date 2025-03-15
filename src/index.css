@@ -49,3 +49,8 @@ main > h1 {
   padding-block: 10px;
   line-height: 19px;
 }
+
+.facts-list > li::marker {
+  color: #61DAFB;
+  font-size: 1.5rem;
+}
