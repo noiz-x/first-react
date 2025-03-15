@@ -1,8 +1,8 @@
-const MainComponent = () => {
+const Main = () => {
   return (
     <main>
-      <h1>Fun Facts about React</h1>
-      <ul>
+      <h1>Fun facts about React</h1>
+      <ul className="facts-list">
         <li>Was first released in 2013!</li>
         <li>Was originally created by Jordan Walker</li>
         <li>Has well over 100k stars on GitHub</li>
@@ -13,4 +13,4 @@ const MainComponent = () => {
   )
 }
 
-export default MainComponent
+export default Main

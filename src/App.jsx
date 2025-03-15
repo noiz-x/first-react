@@ -1,13 +1,11 @@
-import Header from "./components/Header"
-import MainComponent from "./components/MainComponent"
-import Footer from "./components/Footer"
+import NavBar from "./components/NavBar"
+import Main from "./components/Main"
 
 const App = () => {
   return (
     <>
-      <Header/>
-      <MainComponent/>
-      <Footer/>
+      <NavBar/>
+      <Main/>
     </>
   )
 }
