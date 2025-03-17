@@ -1,59 +1,89 @@
-* {
-  box-sizing: border-box;
+html, body {
+    margin: 0;
 }
 
 body {
-  margin: 0;
-  font-family: Inter, san-serif;
-  background-color: #282d35;
-  color: white;
+    font-family: Inter;
+}
+
+.container {
+    margin: 45px 40px;
 }
 
 header {
-  height: 90px;
-  background-color: #21222A;
-  padding: 30px 25px;
+    background: #F55A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 55px;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  height: 100%;
+header > img {
+    width: 24px;
+    margin-right: 7px;
 }
 
-nav > img {
-  margin-right: 7px;
+header > h1 {
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
-nav > span {
-  color: #61DAFB;
-  font-size: 1.4rem;
-  font-weight: 700;
+article.journal-entry {
+    display: flex;
+    margin-bottom: 36px;
 }
 
-main {
-  padding: 60px 30px;
-  background-image: url(/src/assets/react.svg);
-  background-repeat: no-repeat;
-  background-position: right 70%;
+article.journal-entry .marker {
+    width: 7px;
+    margin-right: 4px;
 }
 
-main > h1 {
-  margin: 0;
-  font-size: 2.4rem;
+article.journal-entry .main-image-container {
+    width: 125px;
+    height: 168px;
+    overflow: hidden;
+    border-radius: 5px;
+    flex-shrink: 0;
+    margin-right: 19px;
 }
 
-.facts-list {
-  margin-top: 46px;
-  max-width: 400px;
+article.journal-entry .main-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
-.facts-list > li {
-  padding-block: 10px;
-  line-height: 19px;
+.info-container span.country {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    margin-right: 12px;
 }
 
-.facts-list > li::marker {
-  color: #61DAFB;
-  font-size: 1.5rem;
+.info-container a {
+    color: #2B283A;
+    font-size: 0.7rem;
+}
+
+.info-container a:visited {
+    color: #918E9B;
+}
+
+.info-container h2.entry-title {
+    margin-top: 7px;
+    margin-bottom: 17px;
+}
+
+.info-container p.trip-dates {
+    font-weight: bold;
+}
+
+.info-container p.entry-text {
+    line-height: 1.5;
+    font-size: 0.8rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
 }
